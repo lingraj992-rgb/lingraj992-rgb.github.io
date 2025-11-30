@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ROBOZOME – Robots for Every Occasion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+  {
+    "imports": {
+    }
+  }
+  </script>
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="site-header" id="site-header">
+      <div class="nav-ribbon">
+        <div class="nav-left">
+          <span class="brand-name-ribbon">ROBOZOME</span>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-center" id="nav-center">
+          <button class="nav-item" data-scroll-target="#section-2">Rentals</button>
+          <button class="nav-item" data-scroll-target="#section-6">Services</button>
+          <button class="nav-item" data-scroll-target="#section-12">About</button>
+          <button class="nav-item" data-scroll-target="#section-25">Contact</button>
+          <button class="nav-item nav-item-cta" data-scroll-target="#section-24">Get quote</button>
+          <button class="nav-close" aria-label="Close menu">×</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Section 1: Hero -->
+      <section id="section-1" class="section hero-section">
+        <div class="section-icon">01</div>
+        <div class="hero-shell">
+          <div class="hero-video-frame">
+            <div class="hero-video hero-video-placeholder">
+              <!-- Background video/gif could go here -->
+            </div>
+          </div>
+          <div class="hero-copy">
+            <h1 class="centered">Robots for Rent</h1>
+            <h2 class="centered">Your Event, Our Bots</h2>
+            <p class="centered">
+              Tired of boring events? We've got the metallic muscle to make your mall, exhibition, or party pop!
+              From charming greeters to mind-blowing performers, our robots are ready to roll. Let's make some noise!
+            </p>
+            <button class="primary hero-button" data-scroll-target="#section-9">Rent a bot</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Why us -->
+      <section id="section-2" class="section">
+        <div class="section-icon">02</div>
+        <div class="section-block">
+          <h2 class="centered">Why us?</h2>
+          <div class="why-us-grid">
+            <article class="why-card">
+              <div class="card-icon">★</div>
+              <h3>Event Stars</h3>
+              <p>
+                Make your next exhibition or event unforgettable with our robotic performers and assistants.
+                They're guaranteed to draw crowds and spark conversations.
+              </p>
+              <div class="placeholder-img">Image</div>
+            </article>
+            <article class="why-card">
+              <div class="card-icon">⚙</div>
+              <h3>Development Pros</h3>
+              <p>
+                Need a custom bot? Our development services can bring your wildest robotic dreams to life,
+                from concept to creation.
+              </p>
+              <div class="placeholder-img">Image</div>
+            </article>
+            <article class="why-card">
+              <div class="card-icon">∞</div>
+              <h3>Any Occasion</h3>
+              <p>
+                Malls, festivals, corporate events – if it needs a touch of the future, we've got the bots.
+                We cater to all sorts of gatherings.
+              </p>
+              <div class="placeholder-img">Image</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="section-3" class="section">
+        <div class="section-icon">03</div>
+        <div class="section-block">
+          <h2 class="centered">Robots: Not Just for Sci-Fi</h2>
+          <p class="centered">
+            Forget clunky metal men. Our robots are sleek, smart, and ready to impress.
+            They're the perfect addition to any modern gathering.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="section-4" class="section">
+        <div class="section-icon">04</div>
+        <div class="section-block">
+          <h2 class="centered">Future Now</h2>
+          <p class="centered">
+            We provide cutting-edge robotic solutions for a variety of needs.
+            Get ready for a technological upgrade.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 5: Looping video -->
+      <section id="section-5" class="section">
+        <div class="section-icon">05</div>
+        <div class="section-block">
+          <h2 class="centered">See the Bots Move</h2>
+          <div class="adaptive-video">
+            <div class="video-placeholder">Short video loop placeholder</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: Custom bots -->
+      <section id="section-6" class="section">
+        <div class="section-icon">06</div>
+        <div class="section-block">
+          <h2 class="centered">Custom Bots</h2>
+          <p class="centered">
+            Robots: Build Your Bot<br />
+            Have a specific robotic vision? Our expert team can design and build robots tailored to your unique
+            project requirements. Let's innovate together.
+          </p>
+          <button class="primary" data-scroll-target="#section-24">Start building</button>
+          <div class="placeholder-img large">Image</div>
+        </div>
+      </section>
+
+      <!-- Section 7: Robot FAQs -->
+      <section id="section-7" class="section faq-section">
+        <div class="section-icon">07</div>
+        <div class="section-block">
+          <h2>Robot FAQs</h2>
+          <div class="accordion" data-accordion-group="faq">
+            <button class="accordion-item" data-accordion>
+              <span>Can I rent a robot for a day?</span>
+              <span class="accordion-arrow">▾</span>
+            </button>
+            <div class="accordion-panel">
+              Absolutely! We offer flexible rental periods to suit your event's duration.
+            </div>
+
+            <button class="accordion-item" data-accordion>
+              <span>What kind of events are suitable?</span>
+              <span class="accordion-arrow">▾</span>
+            </button>
+            <div class="accordion-panel">
+              Any event! Malls, exhibitions, parties, corporate functions – you name it.
+            </div>
+
+            <button class="accordion-item" data-accordion>
+              <span>Do you offer support?</span>
+              <span class="accordion-arrow">▾</span>
+            </button>
+            <div class="accordion-panel">
+              Yes, our team provides full setup and on-site support.
+            </div>
+
+            <button class="accordion-item" data-accordion>
+              <span>Can I customize a robot?</span>
+              <span class="accordion-arrow">▾</span>
+            </button>
+            <div class="accordion-panel">
+              Definitely. Our development service is perfect for custom builds.
+            </div>
+
+            <button class="accordion-item" data-accordion>
+              <span>How much does it cost?</span>
+              <span class="accordion-arrow">▾</span>
+            </button>
+            <div class="accordion-panel">
+              Pricing varies. Contact us for a personalized quote.
+            </div>
+
+            <button class="accordion-item" data-accordion>
+              <span>Are robots safe for public events?</span>
+              <span class="accordion-arrow">▾</span>
+            </button>
+            <div class="accordion-panel">
+              Our robots are designed with safety as a top priority.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 8: Robots for Every Occasion carousel -->
+      <section id="section-8" class="section">
+        <div class="section-icon">08</div>
+        <div class="section-block">
+          <h2 class="centered">Robots for Every Occasion</h2>
+          <div class="carousel" data-carousel="occasions">
+            <button class="carousel-arrow carousel-prev" aria-label="Previous">‹</button>
+            <div class="carousel-track">
+              <article class="carousel-item">
+                <h3>Mall Mavens</h3>
+                <p>
+                  Our bots are perfect for drawing crowds and guiding shoppers.
+                  Make your mall the talk of the town with robotic flair.
+                </p>
+                <div class="placeholder-img">Image</div>
+              </article>
+              <article class="carousel-item">
+                <h3>Exhibition Stars</h3>
+                <p>
+                  Add a futuristic touch to your exhibition. Our robots can interact with guests,
+                  provide information, and create unforgettable experiences.
+                </p>
+                <div class="placeholder-img">Image</div>
+              </article>
+              <article class="carousel-item">
+                <h3>Event Entertainers</h3>
+                <p>
+                  From corporate galas to public festivals, our robots bring the wow factor.
+                  They’re guaranteed to make your event a smashing success.
+                </p>
+                <div class="placeholder-img">Image</div>
+              </article>
+              <article class="carousel-item">
+                <h3>Development Droids</h3>
+                <p>
+                  Need a custom bot? We build robots tailored to your specific needs.
+                  Let's create something amazing together.
+                </p>
+                <div class="placeholder-img">Image</div>
+              </article>
+              <article class="carousel-item">
+                <h3>Rental Ready</h3>
+                <p>
+                  Get the perfect robot without the commitment. Our flexible rental options suit any
+                  project or budget. It's that simple.
+                </p>
+                <div class="placeholder-img">Image</div>
+              </article>
+            </div>
+            <button class="carousel-arrow carousel-next" aria-label="Next">›</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 9: Robot types (cards) -->
+      <section id="section-9" class="section">
+        <div class="section-icon">09</div>
+        <div class="section-block">
+          <h2 class="centered">Robot types</h2>
+          <div class="robot-types-grid">
+            <article class="robot-type-card">
+              <h3>Basic Bot</h3>
+              <p>Perfect for simple events, adds that wow factor.</p>
+              <button class="primary" data-scroll-target="#section-24">Rent now</button>
+            </article>
+            <article class="robot-type-card">
+              <h3>Pro Bot</h3>
+              <p>Our advanced model with enhanced features. Perfect for engaging presentations and interactive displays.</p>
+              <button class="primary" data-scroll-target="#section-24">Rent now</button>
+            </article>
+            <article class="robot-type-card">
+              <h3>Custom Creation</h3>
+              <p>Your needs are taken into account and the robot is customized for your specific event.</p>
+              <button class="primary" data-scroll-target="#section-24">Rent now</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 10: Robot types video thumbnail -->
+      <section id="section-10" class="section">
+        <div class="section-icon">10</div>
+        <div class="section-block">
+          <h2 class="centered">Robot types</h2>
+          <div class="click-video" data-click-video>
+            <div class="video-thumb">
+              <span>Tap to play</span>
+            </div>
+            <video class="click-video-player" playsinline>
+              <source src="" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 11: Get Started carousel -->
+      <section id="section-11" class="section">
+        <div class="section-icon">11</div>
+        <div class="section-block">
+          <h2 class="centered">Get Started</h2>
+          <p class="centered">Ready to wow?</p>
+          <div class="carousel" data-carousel="get-started">
+            <button class="carousel-arrow carousel-prev" aria-label="Previous">‹</button>
+            <div class="carousel-track">
+              <article class="carousel-item">
+                <p class="centered">
+                  Don't just stand there! Grab a robot and make your next event legendary.
+                  We're here to make it happen, no fuss, no drama. Just pure robotic awesomeness.
+                </p>
+                <button class="primary" data-scroll-target="#section-24">Contact us</button>
+              </article>
+            </div>
+            <button class="carousel-arrow carousel-next" aria-label="Next">›</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 12: Why Choose Us -->
+      <section id="section-12" class="section">
+        <div class="section-icon">12</div>
+        <div class="section-block long-text">
+          <h2>Why Choose Us?</h2>
+          <p>
+            Because we're the best. Seriously. Our robots are top-notch, our service is impeccable,
+            and our prices won't make you cry. What more could you want?
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 13: placeholder image -->
+      <section id="section-13" class="section">
+        <div class="section-icon">13</div>
+        <div class="section-block">
+          <div class="placeholder-img large">Image</div>
+        </div>
+      </section>
+
+      <!-- Section 14: Clients -->
+      <section id="section-14" class="section">
+        <div class="section-icon">14</div>
+        <div class="section-block">
+          <div class="clients-grid">
+            <div class="client-cell">
+              <h3 class="centered">Our clients</h3>
+            </div>
+            <div class="client-cell">
+              <div class="placeholder-img">Client logo</div>
+            </div>
+            <div class="client-cell">
+              <div class="placeholder-img">Client logo</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 15: Robots on Demand accordion -->
+      <section id="section-15" class="section">
+        <div class="section-icon">15</div>
+        <div class="section-block">
+          <h2>Robots on Demand</h2>
+          <p class="centered">
+            Need a bot? We've got 'em. For malls, events, and more!
+          </p>
+          <div class="accordion" data-accordion-group="demand">
+            <button class="accordion-item" data-accordion>
+              <span><strong>Malls</strong></span>
+              <span class="accordion-arrow">▾</span>
+            </button>
+            <div class="accordion-panel">
+              Make your shopping center a futuristic wonderland. Guide shoppers, entertain kids, or just look cool.
+            </div>
+
+            <button class="accordion-item" data-accordion>
+              <span><strong>Events</strong></span>
+              <span class="accordion-arrow">▾</span>
+            </button>
+            <div class="accordion-panel">
+              From trade shows to gatherings, our robots add that 'wow' factor. They're the ultimate icebreakers and conversation starters.
+            </div>
+
+            <button class="accordion-item" data-accordion>
+              <span><strong>Exhibitions</strong></span>
+              <span class="accordion-arrow">▾</span>
+            </button>
+            <div class="accordion-panel">
+              Boost engagement at your exhibition. Robots can hand out flyers, answer FAQs, or even demo products.
+            </div>
+
+            <button class="accordion-item" data-accordion>
+              <span><strong>Development</strong></span>
+              <span class="accordion-arrow">▾</span>
+            </button>
+            <div class="accordion-panel">
+              Got a wild idea? We build custom robots from scratch. Your imagination is the only limit.
+            </div>
+
+            <button class="accordion-item" data-accordion>
+              <span><strong>Rentals</strong></span>
+              <span class="accordion-arrow">▾</span>
+            </button>
+            <div class="accordion-panel">
+              Why buy when you can rent? Get the perfect robot for your needs, no long-term commitment.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 16: placeholder image -->
+      <section id="section-16" class="section">
+        <div class="section-icon">16</div>
+        <div class="section-block">
+          <div class="placeholder-img large">Image</div>
+        </div>
+      </section>
+
+      <!-- Section 17: Ribbon text -->
+      <section id="section-17" class="section">
+        <div class="section-icon">17</div>
+        <div class="section-block">
+          <div class="marquee">
+            <div class="marquee-inner">
+              <span>* Robots for every Occasion * Custom bot building. Your dream machine awaits *</span>
+              <span>* Robots for every Occasion * Custom bot building. Your dream machine awaits *</span>
+              <span>* Robots for every Occasion * Custom bot building. Your dream machine awaits *</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 18: image carousel -->
+      <section id="section-18" class="section">
+        <div class="section-icon">18</div>
+        <div class="section-block">
+          <div class="carousel" data-carousel="gallery">
+            <button class="carousel-arrow carousel-prev" aria-label="Previous">‹</button>
+            <div class="carousel-track">
+              <article class="carousel-item">
+                <div class="placeholder-img large">Image 1</div>
+              </article>
+              <article class="carousel-item">
+                <div class="placeholder-img large">Image 2</div>
+              </article>
+              <article class="carousel-item">
+                <div class="placeholder-img large">Image 3</div>
+              </article>
+            </div>
+            <button class="carousel-arrow carousel-next" aria-label="Next">›</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 19: Get Your Bot On -->
+      <section id="section-19" class="section">
+        <div class="section-icon">19</div>
+        <div class="section-block">
+          <h2 class="centered">Get Your Bot On!</h2>
+          <p class="centered">
+            Ready to add some bots to your next event? Contact us.
+          </p>
+          <button class="primary" data-scroll-target="#section-24">Contact us</button>
+          <div class="placeholder-img large">Image</div>
+        </div>
+      </section>
+
+      <!-- Section 20: placeholder image with borders -->
+      <section id="section-20" class="section">
+        <div class="section-icon">20</div>
+        <div class="section-block">
+          <div class="placeholder-img bordered">Image</div>
+        </div>
+      </section>
+
+      <!-- Section 21: placeholder image with borders -->
+      <section id="section-21" class="section">
+        <div class="section-icon">21</div>
+        <div class="section-block">
+          <div class="placeholder-img bordered">Image</div>
+        </div>
+      </section>
+
+      <!-- Section 22: Testimonials inverted V layout -->
+      <section id="section-22" class="section">
+        <div class="section-icon">22</div>
+        <div class="section-block testimonials-block">
+          <div class="test-pair">
+            <div class="test-person">
+              <div class="avatar">P1</div>
+              <div class="test-name">Name</div>
+              <div class="test-title">Title</div>
+            </div>
+            <div class="test-review">
+              A generic review by person 1
+            </div>
+          </div>
+          <div class="test-pair">
+            <div class="test-person">
+              <div class="avatar">P2</div>
+              <div class="test-name">Name</div>
+              <div class="test-title">Title</div>
+            </div>
+            <div class="test-review">
+              A generic review by person 2
+            </div>
+          </div>
+          <div class="test-pair">
+            <div class="test-person">
+              <div class="avatar">P3</div>
+              <div class="test-name">Name</div>
+              <div class="test-title">Title</div>
+            </div>
+            <div class="test-review">
+              A generic review by person 3
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 23: placeholder image -->
+      <section id="section-23" class="section">
+        <div class="section-icon">23</div>
+        <div class="section-block">
+          <div class="placeholder-img large">Image</div>
+        </div>
+      </section>
+
+      <!-- Section 24: Form over background image -->
+      <section id="section-24" class="section">
+        <div class="section-icon">24</div>
+        <div class="section-block form-bg">
+          <div class="floating-form">
+            <h2 class="centered">Let's Build Something Awesome</h2>
+            <form id="awesome-form">
+              <label class="underline-field">
+                <span>Name</span>
+                <textarea rows="1" data-auto-grow></textarea>
+              </label>
+              <label class="underline-field">
+                <span>Email</span>
+                <textarea rows="1" data-auto-grow></textarea>
+              </label>
+              <label class="underline-field">
+                <span>Message</span>
+                <textarea rows="2" data-auto-grow></textarea>
+              </label>
+              <button type="submit" class="primary full-width">Send enquiry</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 25: Get In Touch -->
+      <section id="section-25" class="section">
+        <div class="section-icon">25</div>
+        <div class="section-block">
+          <h2 class="centered">Get In Touch</h2>
+          <ul class="contact-list">
+            <li>lingraj@robozome.com</li>
+            <li>+91 9113258338</li>
+            <li>Bangalore, Karnataka, India</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+</body>
+</html>
+
