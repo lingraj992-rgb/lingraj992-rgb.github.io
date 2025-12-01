@@ -77,11 +77,10 @@ body {
 }
 
 .brand-name-ribbon {
-  font-size: 2.2rem !important;       /* 2x height */
-  transform: scaleX(3);               /* 3x width expansion */
-  display: inline-block;              /* required for scaleX */
-  transform-origin: left center;      /* stretch from left side */
-  letter-spacing: 2px;                /* optional, looks cleaner */
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .nav-left {
