@@ -763,10 +763,8 @@ p {
   }
 }
 .hero-video-frame img {
-  width: 90%;
-  max-width: 520px;
-  height: auto;
+  max-height: 520px;
+  width: auto;
   display: block;
   margin: auto;
-  border-radius: 12px;
 }
