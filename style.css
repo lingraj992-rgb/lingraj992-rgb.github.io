@@ -241,6 +241,7 @@ p {
   background: #070708;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .hero-video-frame {
@@ -760,4 +761,11 @@ p {
   .test-review {
     max-width: 320px;
   }
+}
+.hero-video-frame img {
+  width: 75%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+  margin: auto;
 }
