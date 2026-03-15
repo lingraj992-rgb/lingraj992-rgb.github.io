@@ -250,9 +250,8 @@ p {
 
 .hero-video-placeholder {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1200px;
   margin: auto;
-  aspect-ratio: auto;
 }
 
 .hero-copy {
