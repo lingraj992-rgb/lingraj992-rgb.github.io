@@ -720,7 +720,7 @@ p {
 
 @media (min-width: 720px) {
   .hero-shell {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .hero-video-placeholder {
