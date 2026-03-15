@@ -39,7 +39,7 @@ body {
 
 .app {
   min-height: 100vh;
-  max-width: 960px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 14px 14px env(safe-area-inset-bottom);
 }
@@ -761,8 +761,7 @@ p {
   }
 }
 .hero-video-frame img {
-  max-height: 520px;
-  width: auto;
+  width: 100%;
+  height: auto;
   display: block;
-  margin: auto;
 }
