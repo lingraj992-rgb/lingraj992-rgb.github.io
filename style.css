@@ -249,10 +249,10 @@ p {
 }
 
 .hero-video-placeholder {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background: radial-gradient(circle at top, #18191f 0, #050506 70%);
-  filter: blur(0px) brightness(0.7);
+  width: 70%;
+  max-width: 420px;
+  margin: auto;
+  aspect-ratio: auto;
 }
 
 .hero-copy {
