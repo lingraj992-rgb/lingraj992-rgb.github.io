@@ -233,14 +233,14 @@ p {
 .hero-section {
   padding-top: 80px;
 }
-
+.hero-section .container {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
 .hero-shell {
-  position: relative;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  background: #070708;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
 }
 
@@ -250,8 +250,7 @@ p {
 
 .hero-video-placeholder {
   width: 100%;
-  max-width: 1200px;
-  margin: auto;
+  max-width: 100%;
 }
 
 .hero-copy {
