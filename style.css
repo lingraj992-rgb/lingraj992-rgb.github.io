@@ -239,9 +239,12 @@ p {
   padding-right: 0;
 }
 .hero-shell {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: #070708;
+
+  display: block;   /* 🔥 THIS IS THE FIX */
 }
 
 .hero-video-frame {
