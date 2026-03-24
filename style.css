@@ -791,3 +791,21 @@ p {
   }
 
 }
+@media (max-width: 720px) {
+
+  .hero-shell {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .hero-copy {
+    position: relative !important;
+    left: auto !important;
+    transform: none !important;
+    bottom: auto !important;
+
+    width: calc(100% - 24px) !important;
+    margin-top: 12px !important;
+  }
+
+}
