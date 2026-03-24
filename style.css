@@ -868,9 +868,10 @@ p {
 
 .slides img {
   width: 100%;
-  height: auto;
-  flex: 0 0 100%;   /* 🔥 THIS FIXES 2 IMAGE ISSUE */
-  object-fit: cover;
+  height: 320px;
+  flex: 0 0 100%;
+  object-fit: contain;   /* shows full robot */
+  background: #000;
   border-radius: 12px;
 }
 
@@ -897,12 +898,13 @@ p {
   right: 10px;
 }
 /* Control height */
-.slides img {
-  max-height: 400px;
-}
+
 
 @media (max-width: 720px) {
   .slides img {
     max-height: 220px;
   }
+}
+.slider img {
+  max-height: none !important;
 }
