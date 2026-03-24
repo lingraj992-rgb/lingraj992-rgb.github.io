@@ -187,54 +187,41 @@ if (awesomeForm) {
   });
 }
 
-const slider = document.getElementById("slider");
 const slides = document.getElementById("slides");
+const images = slides.querySelectorAll("img");
 
-let startX = 0;
-let currentX = 0;
 let index = 0;
-const totalSlides = slides.children.length;
 
-slider.addEventListener("touchstart", (e) => {
-  startX = e.touches[0].clientX;
-});
-
-slider.addEventListener("touchmove", (e) => {
-  currentX = e.touches[0].clientX;
-});
-
-slider.addEventListener("touchend", () => {
-  let diff = startX - currentX;
-
-  if (diff > 50 && index < totalSlides - 1) {
-    index++;
-  } else if (diff < -50 && index > 0) {
-    index--;
-  }
-
+// Arrow buttons
+document.querySelector(".next").addEventListener("click", () => {
+  index = (index + 1) % images.length;
   updateSlider();
 });
 
-// Desktop drag support
-slider.addEventListener("mousedown", (e) => {
-  startX = e.clientX;
-  slider.style.cursor = "grabbing";
-});
-
-slider.addEventListener("mouseup", (e) => {
-  currentX = e.clientX;
-  let diff = startX - currentX;
-
-  if (diff > 50 && index < totalSlides - 1) {
-    index++;
-  } else if (diff < -50 && index > 0) {
-    index--;
-  }
-
+document.querySelector(".prev").addEventListener("click", () => {
+  index = (index - 1 + images.length) % images.length;
   updateSlider();
-  slider.style.cursor = "grab";
 });
 
 function updateSlider() {
   slides.style.transform = `translateX(-${index * 100}%)`;
 }
+
+// Swipe support
+let startX = 0;
+
+slides.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+});
+
+slides.addEventListener("touchend", (e) => {
+  let endX = e.changedTouches[0].clientX;
+
+  if (startX - endX > 50) {
+    index = (index + 1) % images.length;
+  } else if (endX - startX > 50) {
+    index = (index - 1 + images.length) % images.length;
+  }
+
+  updateSlider();
+});
