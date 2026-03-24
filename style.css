@@ -821,3 +821,10 @@ p {
 
   text-align: center !important;
 }
+.why-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 8px;
+}
