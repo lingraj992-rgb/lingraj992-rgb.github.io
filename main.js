@@ -186,3 +186,55 @@ if (awesomeForm) {
     showToast("Enquiry sent. We'll get back to you soon.");
   });
 }
+
+const slider = document.getElementById("slider");
+const slides = document.getElementById("slides");
+
+let startX = 0;
+let currentX = 0;
+let index = 0;
+const totalSlides = slides.children.length;
+
+slider.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+});
+
+slider.addEventListener("touchmove", (e) => {
+  currentX = e.touches[0].clientX;
+});
+
+slider.addEventListener("touchend", () => {
+  let diff = startX - currentX;
+
+  if (diff > 50 && index < totalSlides - 1) {
+    index++;
+  } else if (diff < -50 && index > 0) {
+    index--;
+  }
+
+  updateSlider();
+});
+
+// Desktop drag support
+slider.addEventListener("mousedown", (e) => {
+  startX = e.clientX;
+  slider.style.cursor = "grabbing";
+});
+
+slider.addEventListener("mouseup", (e) => {
+  currentX = e.clientX;
+  let diff = startX - currentX;
+
+  if (diff > 50 && index < totalSlides - 1) {
+    index++;
+  } else if (diff < -50 && index > 0) {
+    index--;
+  }
+
+  updateSlider();
+  slider.style.cursor = "grab";
+});
+
+function updateSlider() {
+  slides.style.transform = `translateX(-${index * 100}%)`;
+}
