@@ -809,3 +809,12 @@ p {
   }
 
 }
+@media (max-width: 720px) {
+
+  .hero-copy {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center;
+  }
+
+}
