@@ -812,9 +812,8 @@ p {
 @media (max-width: 720px) {
 
   .hero-copy {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    text-align: center;
+    margin: 12px auto 0 auto !important;
+    width: calc(100% - 24px);
   }
 
 }
