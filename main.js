@@ -187,18 +187,23 @@ if (awesomeForm) {
   });
 }
 
+const slider = document.getElementById("slider");
 const slides = document.getElementById("slides");
 const images = slides.querySelectorAll("img");
 
+const nextBtn = slider.parentElement.querySelector(".next");
+const prevBtn = slider.parentElement.querySelector(".prev");
+
 let index = 0;
 
-// Arrow buttons
-document.querySelector(".next").addEventListener("click", () => {
+// Next
+nextBtn.addEventListener("click", () => {
   index = (index + 1) % images.length;
   updateSlider();
 });
 
-document.querySelector(".prev").addEventListener("click", () => {
+// Prev
+prevBtn.addEventListener("click", () => {
   index = (index - 1 + images.length) % images.length;
   updateSlider();
 });
@@ -206,22 +211,3 @@ document.querySelector(".prev").addEventListener("click", () => {
 function updateSlider() {
   slides.style.transform = `translateX(-${index * 100}%)`;
 }
-
-// Swipe support
-let startX = 0;
-
-slides.addEventListener("touchstart", (e) => {
-  startX = e.touches[0].clientX;
-});
-
-slides.addEventListener("touchend", (e) => {
-  let endX = e.changedTouches[0].clientX;
-
-  if (startX - endX > 50) {
-    index = (index + 1) % images.length;
-  } else if (endX - startX > 50) {
-    index = (index - 1 + images.length) % images.length;
-  }
-
-  updateSlider();
-});
