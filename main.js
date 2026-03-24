@@ -211,3 +211,20 @@ prevBtn.addEventListener("click", () => {
 function updateSlider() {
   slides.style.transform = `translateX(-${index * 100}%)`;
 }
+let startX = 0;
+
+slides.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+});
+
+slides.addEventListener("touchend", (e) => {
+  let endX = e.changedTouches[0].clientX;
+
+  if (startX - endX > 50) {
+    index = (index + 1) % images.length;
+  } else if (endX - startX > 50) {
+    index = (index - 1 + images.length) % images.length;
+  }
+
+  updateSlider();
+});
