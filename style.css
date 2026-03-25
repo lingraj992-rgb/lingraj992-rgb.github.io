@@ -908,3 +908,18 @@ p {
 .slider img {
   max-height: none !important;
 }
+.hero-copy h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.hero-copy h2 {
+  font-size: 18px;
+  color: var(--text-soft);
+  margin-top: 6px;
+}
+
+.hero-copy p {
+  font-size: 14px;
+  line-height: 1.6;
+}
