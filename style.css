@@ -77,9 +77,9 @@ body {
 }
 
 .brand-name-ribbon {
+  font-size: 26px !important;
   font-weight: 800;
   letter-spacing: 0.15em;
-  font-size: 22px;
   text-transform: uppercase;
 }
 
