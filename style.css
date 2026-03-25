@@ -923,3 +923,36 @@ p {
   font-size: 14px;
   line-height: 1.6;
 }
+@media (min-width: 720px) {
+
+  .hero-video-frame {
+    position: relative;
+  }
+
+  .hero-copy {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+    max-width: 420px;
+    padding: 18px;
+
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+
+    border-radius: 14px;
+  }
+
+  .hero-copy h1 {
+    font-size: 34px;
+  }
+
+  .hero-copy h2 {
+    font-size: 20px;
+  }
+
+  .hero-copy p {
+    font-size: 15px;
+  }
+
+}
