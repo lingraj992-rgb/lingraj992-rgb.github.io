@@ -77,9 +77,9 @@ body {
 }
 
 .brand-name-ribbon {
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.15em;
-  font-size: 12px;
+  font-size: 22px;
   text-transform: uppercase;
 }
 
@@ -958,4 +958,9 @@ p {
     font-size: 15px;
   }
 
+}
+@media (max-width: 720px) {
+  .brand-name-ribbon {
+    font-size: 18px;
+  }
 }
