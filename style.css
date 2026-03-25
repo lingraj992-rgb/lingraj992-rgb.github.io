@@ -929,19 +929,22 @@ p {
     position: relative;
   }
 
-  .hero-copy {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+ .hero-copy {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
 
-    max-width: 420px;
-    padding: 18px;
+  width: 80%;
+  max-width: 700px;
+  padding: 24px;
 
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
 
-    border-radius: 14px;
-  }
+  border-radius: 16px;
+  text-align: center;
+}
 
   .hero-copy h1 {
     font-size: 34px;
